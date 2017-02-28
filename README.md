@@ -1,7 +1,7 @@
 # Parallel-Programming
 Answers to all the assignments given in CO473
 
-### 1. PThreads
+1. PThreads
   1. Hello World Program - 0
   2. Hello World Program - 1
   3. Know Your System
@@ -9,7 +9,7 @@ Answers to all the assignments given in CO473
   5. Dot Product with Mutex
   6. Signalling using Condition Variables
   7. Matrix Multiply
-### 2. OpenMP
+2. OpenMP
   1. Hello World Program
   2. Hello World Program - Version 2
   3. DAXPY Loop
@@ -18,7 +18,7 @@ Answers to all the assignments given in CO473
   6. Calculation of π - Worksharing and Reduction
   7. Calculation of π - Monte Carlo Simulation
   8. Producer-Consumer Program
-### 3. MPI 
+3. MPI 
   1. Hello World Example
   2. DAXPY Loop
   3. Hello World Program - Send and Recv
@@ -29,7 +29,7 @@ Answers to all the assignments given in CO473
   8. Pack and Unpack
   9. Derived Datatype - Indexed
   10. Matrix Multiplication on a Cartesian Grid (2D Mesh) using Cannon’s Algorithm
-### 4. CUDA 
+4. CUDA 
   1. Squares of Integers
   2. Device Query
   3. Vector Addition Program
