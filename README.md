@@ -1,5 +1,5 @@
 # Parallel-Programming
-Answers to all the assignments given in CO473
+Answers to all the assignments given in CO471
 
 1. PThreads
   1. Hello World Program - 0
