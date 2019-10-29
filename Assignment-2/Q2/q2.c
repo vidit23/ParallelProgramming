@@ -33,10 +33,16 @@ int main(int argc, char* argv[])
     double share = (double)LEN/numP;
     MPI_Barrier(MPI_COMM_WORLD);
     double t1 = MPI_Wtime();
+   // your approach:
     for (int i = rank*share; i < (rank+1)*share; i++)
     {
         X[i] = a*X[i] + Y[i];
     }
+   
+   //alternate approach:
+   for(int i = rank; i<LEN; i+=numP)
+        Xi] = (X[i] * a) +Y[i];
+   }
     MPI_Barrier(MPI_COMM_WORLD);
     t1 = MPI_Wtime() - t1;
     //printf("Rank: %d out of %d Processes\n", rank, numP);
