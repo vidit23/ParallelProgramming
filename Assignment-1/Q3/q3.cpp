@@ -33,6 +33,7 @@ int a = 2;
 void operation(int num_t)
 {
    omp_set_num_threads(num_t);
+   //with pragma omp for
    #pragma omp parallel
    {
       #pragma omp for
@@ -40,6 +41,16 @@ void operation(int num_t)
       {
          X[i] = a*X[i] + Y[i];
       }
+   }
+   
+   //without pragma omp for
+   # pragma omp parallel
+   {omp_set_num_threads(n);
+      int id ;
+      id = omp_get_thread_num();
+      n= omp_get_num_threads ();
+      for(int i = id; i<LEN; i=i+n)
+      a[i] = a[i] * p + b[i];
    }
 }
 
